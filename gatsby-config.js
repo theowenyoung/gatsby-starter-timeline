@@ -34,6 +34,7 @@ module.exports = {
     title: `My Blog Title`,
     author: `My Name`,
     description: `My site description...`,
+    keywords: ["Blog"],
     social: [
       {
         name: `twitter`,
