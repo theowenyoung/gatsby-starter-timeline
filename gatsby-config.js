@@ -22,11 +22,39 @@ module.exports = {
     //     },
     //   },
     // },
+    // {
+    //   resolve: `@theowenyoung/gatsby-source-instagram`,
+    //   options: {
+    //     access_token: process.env.INSTAGRAM_ACCESS_TOKEN,
+    //     paginate: 100,
+    //     maxPosts: 1000,
+    //   },
+    // },
+
     {
       resolve: `gatsby-theme-timeline`,
       options: {
+        // postsPerPage: 20,
         tweetTypeName: ["TweetsJson", "twitterStatusesUserTimelineMyTweet"],
+        instagramTypeName: ["InstagramJson", "InstaNode"],
+        // disqus: {
+        //   shortname: "gatsby-theme-timeline",
+        // },
+        utterances: {
+          repo: "theowenyoung/gatsby-theme-timeline",
+          label: "comment",
+        },
+        // shouldTransformImage: false,
+        // basePath: "/test",
+        // postsFilter: {
+        //   tags: {
+        //     in: ["tweet"],
+        //   },
+        // },
       },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
     },
   ],
   // Customize your site metadata:

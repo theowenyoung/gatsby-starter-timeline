@@ -1,15 +1,19 @@
 # Gatsby Starter Timeline
 
-This is a repo for Gatsby's timeline theme, with the theme, you can show all your posts, tweets at one timeline.
+This is a repo for [Gatsby's timeline theme](https://github.com/theowenyoung/gatsby-theme-timeline/tree/main/packages/gatsby-theme-timeline#readme) starter, with the theme, you can show all your posts, tweets, instagram medias, youtube videos, hacker news, reddit post at one.
 
-[Live Demo](https://gatsby-starter-timeline.vercel.app/)
+[Live Demo](https://gatsby-starter-timeline.owenyoung.com/)
 
-![Screen](https://i.imgur.com/qtXnwLQ.png)
+![Screen](https://i.imgur.com/6yITI4E.png)
 
 ## Features
 
-- Support Mdx, tweet, reddit post
+- Support Mdx, tweet, instagram medias, youtube videos, hacker news, reddit post
 - Support i18n by [gatsby-theme-i18n](https://www.gatsbyjs.com/plugins/gatsby-theme-i18n/), you can choose your own [i18n library](https://github.com/gatsbyjs/themes/tree/master/packages)
+- Support comments [disqus](https://disqus.com/) or [utterances](https://utteranc.es/)
+- Support Tags
+- Pagination, even tag page supports pagination
+- SEO Optimization
 
 ## 🚀 Quick start
 
@@ -36,6 +40,18 @@ This is a repo for Gatsby's timeline theme, with the theme, you can show all you
     ```
 
     Then, uncomment `gatsby-config.js` plugin `gatsby-source-twitter`
+
+1.  **Create instagram credentials**
+
+    Optional, if you want to add your instagram to blog, create `.env` with the following content:
+
+    ```ini
+    INSTAGRAM_ACCESS_TOKEN=xx
+    ```
+
+    > See [How to get instagram access token](https://github.com/nbcommunication/InstagramBasicDisplayApi#creating-a-facebook-app)
+
+    > Then, uncomment `gatsby-config.js` plugin `gatsby-source-instagram`
 
 1.  **Start developing.**
 
@@ -108,9 +124,14 @@ gatsby-starter-timeline
 
 1.  **`README.md`**: A text file containing useful reference information about your project.
 
+## Use Case
+
+- [Owen Young's Story](https://blog.owenyoung.com)
+- [Buzzing on stocks](https://stocks.buzzing.cc)
+
 ## Full Screen
 
-![Full](https://i.imgur.com/XfXuCRJ.png)
+![Full](https://i.imgur.com/rDfJury.jpg)
 
 ## 🎓 Learning Gatsby
 
